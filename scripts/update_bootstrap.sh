@@ -3,6 +3,7 @@
 bs_dir='../bootstrap'
 lrb_dir='.'
 lrb_img_dir="$lrb_dir/vendor/assets/images/twitter/bootstrap"
+lrb_fonts_dir="$lrb_dir/vendor/assets/fonts/twitter/bootstrap"
 lrb_js_dir="$lrb_dir/vendor/assets/javascripts/twitter/bootstrap"
 lrb_styles_dir="$lrb_dir/vendor/assets/stylesheets/twitter"
 lrb_fw_dir="$lrb_dir/vendor/frameworks/twitter/bootstrap"
@@ -16,6 +17,12 @@ fi
 for f in $bs_dir/img/*; do
     bn=$(basename $f)
     cp $f $lrb_img_dir/$bn
+done
+
+# fonts
+for f in $bs_dir/fonts/*; do
+    bn=$(basename $f)
+    cp $f $lrb_fonts_dir/$bn
 done
 
 # scripts
