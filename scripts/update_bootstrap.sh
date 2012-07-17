@@ -35,6 +35,7 @@ done
 for f in $bs_dir/less/*.less; do
     bn=$(basename $f)
     sed -e 's#"\.\./img/\([^"]*\)"#"twitter/bootstrap/\1"#g' \
+        -e 's#"\.\./fonts/\([^"]*\)"#"twitter/bootstrap/\1"#g' \
         -e 's#background-image: url(#background-image: asset-url(#g' \
         $f > $lrb_fw_dir/$bn
 done
