@@ -1,32 +1,32 @@
 // ICONIC ICONS
 // ------------
 
-@iconicStrokeMainPath:    asset-url("@{iconicStrokePath}.eot");
-@iconicStrokeEotPath:     asset-url("@{iconicStrokePath}.eot?#iefix");
-@iconicStrokeWoffPath:    asset-url("@{iconicStrokePath}.woff");
-@iconicStrokeTtfPath:     asset-url("@{iconicStrokePath}.ttf");
-@iconicStrokeSvgPath:     asset-url("@{iconicStrokePath}.svg#iconic");
-@iconicStrokeOtfPath:     asset-url("@{iconicStrokePath}.otf");
+@iconicStrokeMainPath:    "@{iconicStrokePath}.eot";
+@iconicStrokeEotPath:     "@{iconicStrokePath}.eot?#iefix";
+@iconicStrokeWoffPath:    "@{iconicStrokePath}.woff";
+@iconicStrokeTtfPath:     "@{iconicStrokePath}.ttf";
+@iconicStrokeSvgPath:     "@{iconicStrokePath}.svg#iconic";
+@iconicStrokeOtfPath:     "@{iconicStrokePath}.otf";
 
-@iconicFillMainPath:    asset-url("@{iconicFillPath}.eot");
-@iconicFillEotPath:     asset-url("@{iconicFillPath}.eot?#iefix");
-@iconicFillWoffPath:    asset-url("@{iconicFillPath}.woff");
-@iconicFillTtfPath:     asset-url("@{iconicFillPath}.ttf");
-@iconicFillSvgPath:     asset-url("@{iconicFillPath}.svg#iconic");
-@iconicFillOtfPath:     asset-url("@{iconicFillPath}.otf");
+@iconicFillMainPath:    "@{iconicFillPath}.eot";
+@iconicFillEotPath:     "@{iconicFillPath}.eot?#iefix";
+@iconicFillWoffPath:    "@{iconicFillPath}.woff";
+@iconicFillTtfPath:     "@{iconicFillPath}.ttf";
+@iconicFillSvgPath:     "@{iconicFillPath}.svg#iconic";
+@iconicFillOtfPath:     "@{iconicFillPath}.otf";
 
 // Load font
 @font-face {
   font-family: IconicStroke;
   font-weight: normal;
-  src: url(@iconicStrokeMainPath);
-  src: local('IconicStroke'), url(@iconicStrokeEotPath) format('embedded-opentype'), url(@iconicStrokeWoffPath) format('woff'), url(@iconicStrokeTtfPath) format('truetype'), url(@iconicStrokeSvgPath) format('svg'), url(@iconicStrokeOtfPath) format('opentype');
+  src: asset-url(@iconicStrokeMainPath);
+  src: local('IconicStroke'), asset-url(@iconicStrokeEotPath) format('embedded-opentype'), asset-url(@iconicStrokeWoffPath) format('woff'), asset-url(@iconicStrokeTtfPath) format('truetype'), asset-url(@iconicStrokeSvgPath) format('svg'), asset-url(@iconicStrokeOtfPath) format('opentype');
 }
 @font-face {
   font-family: IconicFill;
   font-weight: normal;
   src: url(@iconicFillMainPath);
-  src: local('IconicFill'), url(@iconicFillEotPath) format('embedded-opentype'), url(@iconicFillWoffPath) format('woff'), url(@iconicFillTtfPath) format('truetype'), url(@iconicFillSvgPath) format('svg'), url(@iconicFillOtfPath) format('opentype');
+  src: local('IconicFill'), asset-url(@iconicFillEotPath) format('embedded-opentype'), asset-url(@iconicFillWoffPath) format('woff'), asset-url(@iconicFillTtfPath) format('truetype'), asset-url(@iconicFillSvgPath) format('svg'), asset-url(@iconicFillOtfPath) format('opentype');
 }
 
 // Icons
