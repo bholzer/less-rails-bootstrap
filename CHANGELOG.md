@@ -1,6 +1,52 @@
 CHANGELOG
 =========
 
+2.3.3 - 03/06/2013
+
+* Update boostrap to 2.3.2.
+
+
+2.3.2 - 03/06/2013
+
+* Update to less-rails 2.3.1. Really uses less v1.3.3
+* Update boostrap to 2.3.1.
+
+
+2.3.1 - 03/06/2013
+
+* Update to less-rails 2.3.0.
+
+
+2.3.0 - 02/24/2013
+
+* Update boostrap to 2.3.0. Thanks to all that helped!
+
+
+2.2.1 - 01/14/2013
+
+* Update bootstrap to 2.2.2. Thanks to @trentclowater
+
+
+2.2.0 - 10/31/2012
+
+* Update bootstrap to 2.2.1. Thanks to @spider-network
+
+
+2.1.1 - 09/05/2012
+
+* Use bootstrap 2.1.1. Thanks @erdah.
+
+
+2.1.0 - 08/21/2012
+
+* Use bootstrap 2.1.0. Thanks @vickash.
+
+
+2.0.13 - 06/07/2012
+
+* Update to bootstrap 2.0.4.
+
+
 2.0.12 - 04/25/2012
 
 * Work with latest less.rb v2.2.1.
