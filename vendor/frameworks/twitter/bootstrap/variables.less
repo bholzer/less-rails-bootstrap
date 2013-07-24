@@ -1,9 +1,10 @@
-//
-// Variables
-// --------------------------------------------------
+// Variables.less
+// Variables to customize the look and feel of Bootstrap
+// -----------------------------------------------------
 
 
-// Global values
+
+// GLOBAL VALUES
 // --------------------------------------------------
 
 
@@ -39,11 +40,22 @@
 
 // Typography
 // -------------------------
+<<<<<<< HEAD
 
 @font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
+=======
+@sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
+
+@baseFontSize:          13px;
+@baseFontFamily:        @sansFontFamily;
+@baseLineHeight:        18px;
+@altFontFamily:         @serifFontFamily;
+>>>>>>> ce13c6a... Downgrade bootstrap.
 
 @font-size-base:          14px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
@@ -53,6 +65,7 @@
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
+<<<<<<< HEAD
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
 
@@ -77,6 +90,8 @@
 @component-active-bg:            @brand-primary;
 
 
+=======
+>>>>>>> ce13c6a... Downgrade bootstrap.
 // Tables
 // -------------------------
 
@@ -87,9 +102,11 @@
 @table-border-color:                 #ddd; // table and cell border
 
 
+
 // Buttons
 // -------------------------
 
+<<<<<<< HEAD
 @btn-default-color:              #fff;
 @btn-default-bg:                 #a7a9aa;
 @btn-default-border:             @btn-default-bg;
@@ -97,6 +114,10 @@
 @btn-primary-color:              @btn-default-color;
 @btn-primary-bg:                 @brand-primary;
 @btn-primary-border:             @btn-primary-bg;
+=======
+@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 15%);
+>>>>>>> ce13c6a... Downgrade bootstrap.
 
 @btn-success-color:              @btn-default-color;
 @btn-success-bg:                 @brand-success;
@@ -114,10 +135,16 @@
 @btn-info-bg:                    @brand-info;
 @btn-info-border:                @btn-info-bg;
 
+<<<<<<< HEAD
+=======
+@btnInverseBackground:              @gray;
+@btnInverseBackgroundHighlight:     @grayDarker;
+>>>>>>> ce13c6a... Downgrade bootstrap.
 
 
 // Forms
 // -------------------------
+<<<<<<< HEAD
 
 @input-bg:                       #fff;
 @input-bg-disabled:              @gray-lighter;
@@ -142,6 +169,23 @@
 
 @dropdown-link-active-color:     #fff;
 @dropdown-link-active-bg:        @component-active-bg;
+=======
+@inputBackground:               @white;
+@inputBorder:                   #ccc;
+@inputBorderRadius:             3px;
+@inputDisabledBackground:       @grayLighter;
+@formActionsBackground:         #f5f5f5;
+
+// Dropdowns
+// -------------------------
+@dropdownBackground:            @white;
+@dropdownBorder:                rgba(0,0,0,.2);
+@dropdownLinkColor:             @grayDark;
+@dropdownLinkColorHover:        @white;
+@dropdownLinkBackgroundHover:   @linkColor;
+@dropdownDividerTop:            #e5e5e5;
+@dropdownDividerBottom:         @white;
+>>>>>>> ce13c6a... Downgrade bootstrap.
 
 @dropdown-link-color:            @gray-dark;
 @dropdown-link-hover-color:      #fff;
@@ -151,11 +195,19 @@
 // COMPONENT VARIABLES
 // --------------------------------------------------
 
-
 // Z-index master list
 // -------------------------
 // Used for a bird's eye view of components dependent on the z-axis
 // Try to avoid customizing these :)
+<<<<<<< HEAD
+=======
+@zindexDropdown:          1000;
+@zindexPopover:           1010;
+@zindexTooltip:           1020;
+@zindexFixedNavbar:       1030;
+@zindexModalBackdrop:     1040;
+@zindexModal:             1050;
+>>>>>>> ce13c6a... Downgrade bootstrap.
 
 @zindex-dropdown:          1000;
 @zindex-popover:           1010;
@@ -233,6 +285,7 @@
 @jumbotron-heading-color:        inherit;
 @jumbotron-lead-color:           inherit;
 
+<<<<<<< HEAD
 
 // Form states and alerts
 // -------------------------
@@ -315,6 +368,27 @@
 @progress-bar-danger-bg:      @brand-danger;
 @progress-bar-info-bg:        @brand-info;
 
+=======
+// Navbar
+// -------------------------
+@navbarHeight:                    40px;
+@navbarBackground:                @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
+
+@navbarText:                      @grayLight;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      @navbarBackground;
+
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
+@navbarSearchBackgroundFocus:     @white;
+@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
+@navbarSearchPlaceholderColor:    #ccc;
+@navbarBrandColor:                @navbarLinkColor;
+
+>>>>>>> ce13c6a... Downgrade bootstrap.
 
 // List group
 // -------------------------
@@ -351,6 +425,7 @@
 @panel-danger-border:         @state-danger-border;
 @panel-danger-heading-bg:     @state-danger-bg;
 
+<<<<<<< HEAD
 @panel-info-text:             @state-info-text;
 @panel-info-border:           @state-info-border;
 @panel-info-heading-bg:       @state-info-bg;
@@ -378,10 +453,13 @@
 // Horizontal forms & lists
 @component-offset-horizontal: 180px;
 
+=======
+>>>>>>> ce13c6a... Downgrade bootstrap.
 
 // Media queries breakpoints
 // --------------------------------------------------
 
+<<<<<<< HEAD
 // Tiny screen / phone
 @screen-tiny:                480px;
 @screen-phone:               @screen-tiny;
@@ -425,3 +503,16 @@
 @grid-gutter-width:         30px;
 // Point at which the navbar stops collapsing
 @grid-float-breakpoint:     @screen-tablet;
+=======
+// Default 940px grid
+// -------------------------
+@gridColumns:             12;
+@gridColumnWidth:         60px;
+@gridGutterWidth:         20px;
+@gridRowWidth:            (@gridColumns * @gridColumnWidth) + (@gridGutterWidth * (@gridColumns - 1));
+
+// Fluid grid
+// -------------------------
+@fluidGridColumnWidth:    6.382978723%;
+@fluidGridGutterWidth:    2.127659574%;
+>>>>>>> ce13c6a... Downgrade bootstrap.

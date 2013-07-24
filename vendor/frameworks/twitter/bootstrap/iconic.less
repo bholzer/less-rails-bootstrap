@@ -19,14 +19,19 @@
 @font-face {
   font-family: IconicStroke;
   font-weight: normal;
-  src: asset-url(@iconicStrokeMainPath);
-  src: local('IconicStroke'), asset-url(@iconicStrokeEotPath) format('embedded-opentype'), asset-url(@iconicStrokeWoffPath) format('woff'), asset-url(@iconicStrokeTtfPath) format('truetype'), asset-url(@iconicStrokeSvgPath) format('svg'), asset-url(@iconicStrokeOtfPath) format('opentype');
+  src: url(@iconicStrokeMainPath);
+  src: local('IconicStroke'), url(@iconicStrokeEotPath) format('embedded-opentype'), url(@iconicStrokeWoffPath) format('woff'), url(@iconicStrokeTtfPath) format('truetype'), url(@iconicStrokeSvgPath) format('svg'), url(@iconicStrokeOtfPath) format('opentype');
 }
 @font-face {
   font-family: IconicFill;
   font-weight: normal;
+<<<<<<< HEAD
   src: asset-url(@iconicFillMainPath);
   src: local('IconicFill'), asset-url(@iconicFillEotPath) format('embedded-opentype'), asset-url(@iconicFillWoffPath) format('woff'), asset-url(@iconicFillTtfPath) format('truetype'), asset-url(@iconicFillSvgPath) format('svg'), asset-url(@iconicFillOtfPath) format('opentype');
+=======
+  src: url(@iconicFillMainPath);
+  src: local('IconicFill'), url(@iconicFillEotPath) format('embedded-opentype'), url(@iconicFillWoffPath) format('woff'), url(@iconicFillTtfPath) format('truetype'), url(@iconicFillSvgPath) format('svg'), url(@iconicFillOtfPath) format('opentype');
+>>>>>>> ce13c6a... Downgrade bootstrap.
 }
 
 // Icons
