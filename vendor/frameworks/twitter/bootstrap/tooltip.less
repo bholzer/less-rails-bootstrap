@@ -1,12 +1,14 @@
-// TOOLTIP
-// ------=
+//
+// Tooltips
+// --------------------------------------------------
 
+
+// Base class
 .tooltip {
   position: absolute;
   z-index: @zindex-tooltip;
   display: block;
   visibility: visible;
-<<<<<<< HEAD
   font-size: @font-size-mini;
   line-height: 1.4;
   .opacity(0);
@@ -16,43 +18,24 @@
   &.right  { margin-left:  3px; padding: 0 5px; }
   &.bottom { margin-top:   3px; padding: 5px 0; }
   &.left   { margin-left: -3px; padding: 0 5px; }
-=======
-  padding: 5px;
-  font-size: 11px;
-  .opacity(0);
-  &.in     { .opacity(80); }
-  &.top    { margin-top:  -2px; }
-  &.right  { margin-left:  2px; }
-  &.bottom { margin-top:   2px; }
-  &.left   { margin-left: -2px; }
-  &.top .tooltip-arrow    { #popoverArrow > .top(); }
-  &.left .tooltip-arrow   { #popoverArrow > .left(); }
-  &.bottom .tooltip-arrow { #popoverArrow > .bottom(); }
-  &.right .tooltip-arrow  { #popoverArrow > .right(); }
->>>>>>> ce13c6a... Downgrade bootstrap.
 }
+
+// Wrapper for the tooltip content
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
-<<<<<<< HEAD
   color: @tooltip-color;
   text-align: center;
   text-decoration: none;
   background-color: @tooltip-bg;
   border-radius: @border-radius-base;
-=======
-  color: @white;
-  text-align: center;
-  text-decoration: none;
-  background-color: @black;
-  .border-radius(4px);
->>>>>>> ce13c6a... Downgrade bootstrap.
 }
+
+// Arrows
 .tooltip-arrow {
   position: absolute;
   width: 0;
   height: 0;
-<<<<<<< HEAD
   border-color: transparent;
   border-style: solid;
 }
@@ -85,6 +68,4 @@
     border-width: 0 @tooltip-arrow-width @tooltip-arrow-width;
     border-bottom-color: @tooltip-arrow-color;
   }
-=======
->>>>>>> ce13c6a... Downgrade bootstrap.
 }

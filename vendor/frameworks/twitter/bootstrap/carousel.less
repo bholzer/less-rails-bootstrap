@@ -1,5 +1,7 @@
-// CAROUSEL
-// --------
+//
+// Carousel
+// --------------------------------------------------
+
 
 // Wrapper for the slide container and indicators
 .carousel {
@@ -13,55 +15,52 @@
   width: 100%;
 }
 
-<<<<<<< HEAD
 // Immediate parent of all slides
 .carousel-inner {
-=======
-.carousel {
->>>>>>> ce13c6a... Downgrade bootstrap.
 
-  .item {
+  > .item {
     display: none;
     position: relative;
     .transition(.6s ease-in-out left);
+
+    // Account for jankitude on images
+    > img,
+    > a > img {
+      display: block;
+      line-height: 1;
+    }
   }
 
-  // Account for jankitude on images
-  .item > img {
-    display: block;
-    line-height: 1;
-  }
+  > .active,
+  > .next,
+  > .prev { display: block; }
 
-  .active,
-  .next,
-  .prev { display: block; }
-
-  .active {
+  > .active {
     left: 0;
   }
 
-  .next,
-  .prev {
+  > .next,
+  > .prev {
     position: absolute;
     top: 0;
     width: 100%;
   }
 
-  .next {
+  > .next {
     left: 100%;
   }
-  .prev {
+  > .prev {
     left: -100%;
   }
-  .next.left,
-  .prev.right {
+  > .next.left,
+  > .prev.right {
     left: 0;
   }
 
-  .active.left {
+  > .active.left {
     left: -100%;
   }
-  .active.right {
+  > .active.right {
     left: 100%;
   }
 
@@ -101,16 +100,10 @@
     background-color: transparent;
   }
 
-<<<<<<< HEAD
   // Hover/focus state
   &:hover,
   &:focus {
     color: #fff;
-=======
-  // Hover state
-  &:hover {
-    color: @white;
->>>>>>> ce13c6a... Downgrade bootstrap.
     text-decoration: none;
     .opacity(.9);
   }
@@ -129,7 +122,6 @@
   }
 }
 
-<<<<<<< HEAD
 // Optional indicator pips
 // -----------------------------
 .carousel-indicators {
@@ -159,14 +151,10 @@
 }
 
 // Optional captions
-=======
-// Caption for text below images
->>>>>>> ce13c6a... Downgrade bootstrap.
 // -----------------------------
 // Hidden by default for smaller viewports
 .carousel-caption {
   position: absolute;
-<<<<<<< HEAD
   left: 15%;
   right: 15%;
   bottom: 20px;
@@ -200,16 +188,4 @@
     right: 20%;
     padding-bottom: 30px;
   }
-=======
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 10px 15px 5px;
-  background: @grayDark;
-  background: rgba(0,0,0,.75);
-}
-.carousel-caption h4,
-.carousel-caption p {
-  color: @white;
->>>>>>> ce13c6a... Downgrade bootstrap.
 }

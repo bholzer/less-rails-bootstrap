@@ -1,5 +1,7 @@
-// DROPDOWN MENUS
-// --------------
+//
+// Dropdown menus
+// --------------------------------------------------
+
 
 // Dropdown arrow/caret
 // --------------------
@@ -13,22 +15,8 @@
   border-right: 4px solid transparent;
   border-left:  4px solid transparent;
   content: "";
-  .opacity(30);
 }
 
-<<<<<<< HEAD
-=======
-// Place the caret
-.dropdown .caret {
-  margin-top: 8px;
-  margin-left: 2px;
-}
-.dropdown:hover .caret,
-.open .caret {
-  .opacity(100);
-}
-
->>>>>>> ce13c6a... Downgrade bootstrap.
 // The dropdown menu (ul)
 // ----------------------
 .dropdown-menu {
@@ -39,28 +27,15 @@
   display: none; // none by default, but block on "open" of the menu
   float: left;
   min-width: 160px;
-  padding: 4px 0;
-  margin: 1px 0 0; // override default ul
+  padding: 5px 0;
+  margin: 2px 0 0; // override default ul
   list-style: none;
-<<<<<<< HEAD
   background-color: @dropdown-bg;
   border: 1px solid #ccc; // IE8 fallback
   border: 1px solid @dropdown-border;
   border-radius: @border-radius-base;
   .box-shadow(0 6px 12px rgba(0,0,0,.175));
   .background-clip(padding-box);
-=======
-  background-color: @dropdownBackground;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0,0,0,.2);
-  *border-right-width: 2px;
-  *border-bottom-width: 2px;
-  .border-radius(5px);
-  .box-shadow(0 5px 10px rgba(0,0,0,.2));
-  -webkit-background-clip: padding-box;
-     -moz-background-clip: padding;
-          background-clip: padding-box;
->>>>>>> ce13c6a... Downgrade bootstrap.
 
   // Aligns the dropdown menu to right
   &.pull-right {
@@ -74,9 +49,9 @@
   }
 
   // Links within the dropdown menu
-  a {
+  > li > a {
     display: block;
-    padding: 3px 15px;
+    padding: 3px 20px;
     clear: both;
     font-weight: normal;
     line-height: @line-height-base;
@@ -85,9 +60,8 @@
   }
 }
 
-// Hover state
+// Hover/Focus state
 // -----------
-<<<<<<< HEAD
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
@@ -119,14 +93,11 @@
 // Nuke hover/focus effects
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
-=======
-.dropdown-menu li > a:hover,
-.dropdown-menu .active > a,
-.dropdown-menu .active > a:hover {
-  color: @dropdownLinkColorHover;
->>>>>>> ce13c6a... Downgrade bootstrap.
   text-decoration: none;
-  background-color: @dropdownLinkBackgroundHover;
+  background-color: transparent;
+  background-image: none; // Remove CSS gradient
+  .reset-filter();
+  cursor: default;
 }
 
 // Open state for the dropdown
@@ -143,7 +114,6 @@
   }
 }
 
-<<<<<<< HEAD
 
 // Backdrop to catch body clicks on mobile, etc.
 // ---------------------------
@@ -156,8 +126,6 @@
   z-index: @zindex-dropdown - 10;
 }
 
-=======
->>>>>>> ce13c6a... Downgrade bootstrap.
 // Right aligned dropdowns
 // ---------------------------
 .pull-right > .dropdown-menu {
@@ -174,13 +142,8 @@
   // Reverse the caret
   .caret {
     border-top: 0;
-<<<<<<< HEAD
     border-bottom: 4px solid #000;
     content: "";
-=======
-    border-bottom: 4px solid @black;
-    content: "\2191";
->>>>>>> ce13c6a... Downgrade bootstrap.
   }
   // Different positioning for bottom up menu
   .dropdown-menu {
@@ -190,7 +153,6 @@
   }
 }
 
-<<<<<<< HEAD
 // Sub menus
 // ---------------------------
 .dropdown-submenu {
@@ -257,15 +219,8 @@
   padding-right: 20px;
 }
 
-=======
->>>>>>> ce13c6a... Downgrade bootstrap.
 // Typeahead
 // ---------------------------
 .typeahead {
-<<<<<<< HEAD
   z-index: 1051;
-=======
-  margin-top: 2px; // give it some space to breathe
-  .border-radius(4px);
->>>>>>> ce13c6a... Downgrade bootstrap.
 }
